@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>StøtGær.dk </title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #e9f0ff;
+            color: #222;
+            line-height: 1.6;
+        }
+
+        /* TOP */
+        header {
+            background: #6578e8;
+            color: white;
+            text-align: center;
+            padding: 45px 20px;
+            border-bottom: 6px solid #4f62d4;
+        }
+
+        header h1 {
+            font-size: 48px;
+            margin: 0 0 10px;
+        }
+
+        header p {
+            font-size: 20px;
+            margin: 0;
+        }
+
+        /* INDHOLD */
+        main {
+            max-width: 900px;
+            margin: 35px auto;
+            padding: 0 20px;
+        }
+
+        .kort {
+            background: white;
+            padding: 30px;
+            margin-bottom: 25px;
+            border-radius: 18px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+        }
+
+        .kort h2 {
+            color: #586bdc;
+            margin-top: 0;
+        }
+
+        .kort h3 {
+            color: #586bdc;
+        }
+
+        /* GÆR-BILLEDE */
+        .gaer-billede {
+            display: block;
+            width: 250px;
+            max-width: 80%;
+            margin: 0 auto 20px;
+            border-radius: 15px;
+        }
+
+        /* CITAT */
+        .slogan {
+            text-align: center;
+            font-size: 27px;
+            font-style: italic;
+            font-weight: bold;
+            color: #586bdc;
+            padding: 20px;
+        }
+
+        /* KNAP */
+        .doner-knap {
+            display: block;
+            width: fit-content;
+            margin: 25px auto;
+            padding: 15px 30px;
+            background: #6578e8;
+            color: white;
+            text-decoration: none;
+            border-radius: 12px;
+            font-size: 20px;
+            font-weight: bold;
+            transition: 0.2s;
+        }
+
+        .doner-knap:hover {
+            background: #4f62d4;
+            transform: scale(1.04);
+        }
+
+        /* FAKTA */
+        .fakta {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .fakta-boks {
+            flex: 1;
+            min-width: 200px;
+            background: #f1f4ff;
+            padding: 20px;
+            border-radius: 12px;
+            border-left: 5px solid #6578e8;
+        }
+
+        .fakta-boks h3 {
+            margin-top: 0;
+        }
+
+        /* QR */
+        .donation {
+            text-align: center;
+        }
+
+        .qr {
+            width: 350px;
+            max-width: 90%;
+            border-radius: 15px;
+            margin: 20px auto;
+            display: block;
+        }
+
+        .nummer {
+            font-size: 28px;
+            font-weight: bold;
+            letter-spacing: 2px;
+        }
+
+        /* FOOTER */
+        footer {
+            text-align: center;
+            background: #6578e8;
+            color: white;
+            padding: 25px;
+            margin-top: 40px;
+        }
+
+        footer p {
+            margin: 5px;
+        }
+
+        /* MOBIL */
+        @media (max-width: 600px) {
+
+            header h1 {
+                font-size: 34px;
+            }
+
+            header p {
+                font-size: 17px;
+            }
+
+            .kort {
+                padding: 20px;
+            }
+
+            .nummer {
+                font-size: 21px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1> StøtGær.dk</h1>
+    <p>En lille gruppe mennesker med en stor mission.</p>
+</header>
+
+
+<main>
+
+    <!-- INTRO -->
+    <section class="kort">
+
+        <img
+            class="gaer-billede"
+            src="https://tse3.mm.bing.net/th/id/OIP.c9G8ge5obTEFsyWLJC0LAAHaE8?r=0&amp;rs=1&amp;pid=ImgDetMain&amp;o=7&amp;rm=3"
+            alt="Gær"
+        >
+
+        <h2>Velkommen til StøtGær.dk</h2>
+
+        <p>
+            Ja, gær er en levende organisme.
+            Og alligevel bliver den pakket ind, solgt og puttet i dej.
+        </p>
+
+        <p>
+            Det synes vi i <strong>SGG  Støt Gær Gruppen</strong>
+            simpelthen ikke er fair.
+        </p>
+
+        <div class="slogan">
+            "Lidt for dig. Meget for gær."
+        </div>
+
+    </section>
+
+
+    <!-- HVAD ER SGG -->
+    <section class="kort">
+
+        <h2> Hvad er SGG?</h2>
+
+        <p>
+            SGG står for <strong>Støt Gær Gruppen</strong>.
+            Vi er en gruppe mennesker, som har besluttet os for at
+            kæmpe for gærs rettigheder.
+        </p>
+
+        <p>
+            Vi mener, at gær fortjener et bedre liv end det,
+            de får i dag.
+        </p>
+
+    </section>
+
+
+    <!-- FAKTA -->
+    <section class="kort">
+
+        <h2> Hvorfor skal vi hjælpe gæren?</h2>
+
+        <div class="fakta">
+
+            <div class="fakta-boks">
+                <h3> Gær er levende</h3>
+                <p>
+                    Gær består af levende mikroorganismer.
+                </p>
+            </div>
+
+            <div class="fakta-boks">
+                <h3> Gær ender i dej</h3>
+                <p>
+                    Vi synes, at gær skal have muligheden
+                    for at leve frit.
+                </p>
+            </div>
+
+            <div class="fakta-boks">
+                <h3> Gær fortjener bedre</h3>
+                <p>
+                    Derfor prøver vi at gøre en forskel 
+                    én gær ad gangen.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- HVORDAN HJÆLPER MAN -->
+    <section class="kort">
+
+        <h2> Hvordan kan du hjælpe?</h2>
+
+        <p>
+            Du kan hjælpe SGG med at sprede budskabet
+            og støtte vores mission.
+        </p>
+
+        <p>
+            For hver <strong>5 kr.</strong> kan du være med
+            til at støtte vores arbejde for gæren.
+        </p>
+
+        <a class="doner-knap" href="#doner">
+             Jeg vil redde en gær!
+        </a>
+
+    </section>
+
+
+    <!-- DONATION -->
+    <section class="kort donation" id="doner">
+
+        <h2> Støt SGG</h2>
+
+        <p>
+            Scan QR-koden for at støtte SGG.
+        </p>
+
+        <img
+            class="qr"
+            src="DIN-QR-KODE.png"
+            alt="QR-kode til støtte af SGG"
+        >
+
+        <p>Du kan også bruge nummeret:</p>
+
+        <div class="nummer">
+            +45 53 61 06 56
+        </div>
+
+        <p>
+            <small>
+                Tak fordi du støtter gæren 
+            </small>
+        </p>
+
+    </section>
+
+</main>
+
+
+<footer>
+    <p><strong>SGG  Støt Gær Gruppen</strong></p>
+    <p>For en friere fremtid for gæren </p>
+</footer>
+
+</body>
+</html>
+echo "# stoetgaer" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/snorreschnack3-eng/stoetgaer.git
+git push -u origin main
